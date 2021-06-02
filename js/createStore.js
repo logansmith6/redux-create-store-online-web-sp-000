@@ -1,3 +1,4 @@
+//creates a closure 
 function createStore() {
   let state;
 
