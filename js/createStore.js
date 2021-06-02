@@ -1,4 +1,4 @@
-//creates a closure
+//creates a closure around variables in it's scope
 function createStore() {
   let state;
 
