@@ -7,6 +7,7 @@ function createStore() {
     render();
   };
 }
+//////////////////////////////////////////////////////
 
 function reducer(state = { count: 0 }, action) {
   switch (action.type) {
