@@ -32,7 +32,7 @@ function reducer(state = { count: 0 }, action) {
 
 function render() {
   let container = document.getElementById('container');
-  container.textContent = state.count;
+  container.textContent = store.getState().count;
 };
 
 let store = createStore();
