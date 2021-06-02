@@ -6,6 +6,15 @@ function createStore() {
     state = reducer(state, action);
     render();
   };
+
+  function getState() {
+    return state;
+  }
+
+  return {
+    dispatch,
+    getState
+  };
 }
 // ////////////////////////////////////////////////////
 
