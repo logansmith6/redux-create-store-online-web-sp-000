@@ -1,5 +1,5 @@
 //creates a closure around variables in it's scope
-function createStore() {
+function createStore(reducer) {
   let state;
 
   function dispatch(action){
@@ -35,7 +35,7 @@ function render() {
   container.textContent = store.getState().count;
 };
 
-let store = createStore();
+let store = createStore(reducer);
 store.dispatch({ type: '@@INIT' });
 
 
